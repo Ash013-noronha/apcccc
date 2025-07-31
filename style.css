@@ -1,0 +1,269 @@
+/* Reset and Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #273469, #6C3483); /* Royal blue to purple */
+    color: #FFF5EE; /* Soft ivory for text */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000; /* Deep royal blue */
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFD700; /* Gold */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #FFD700; /* Gold text */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFF5EE; /* Ivory on hover */
+    text-shadow: 0 0 5px #FFD700;
+}
+
+/* Buttons */
+.nav-buttons .btn {
+    margin-left: 10px;
+    padding: 8px 18px;
+    background: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-buttons .btn-outline {
+    background: transparent;
+}
+
+.nav-buttons .btn:hover,
+.nav-buttons .btn-outline:hover {
+    background: #FFD700;
+    color: #1A5276; /* Royal blue on hover */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #FFD700; /* Gold headline */
+}
+
+header p {
+    max-width: 700px;
+    margin: 10px auto 0;
+    font-size: 1.1rem;
+    color: #FFF5EE;
+    opacity: 0.85;
+}
+
+/* Home Page */
+.home-logo {
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+}
+
+/* About Section */
+.about-section {
+    background-color: #262b5c; /* Deep royal background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(80, 45, 80, 0.15);
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+    color: #FFF5EE; /* Ivory text */
+}
+
+/* Property Cards */
+.property {
+    background-color: #333347; /* Charcoal-plum for card body */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(30, 24, 70, 0.12);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    border: 2px solid #FFD700; /* Subtle gold edge */
+}
+
+.property img {
+    display: block;
+    max-width: 320px;     /* Limit image width */
+    max-height: 200px;    /* Limit image height */
+    width: 100%;          /* Responsive */
+    height: auto;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    object-fit: cover;    /* Keeps a neat aspect ratio */
+    box-shadow: 0 2px 10px rgba(44, 32, 88, 0.11);
+}
+
+.property h2 {
+    color: #FFD700; /* Gold accent */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #EFBF04; /* Deep yellow-gold */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.property p {
+    color: #FFF5EE;
+    background-color: #444160; /* Rich plum highlight */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Buttons on property cards */
+.property a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FFD700;
+    color: #1A5276;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-weight: 600;
+    border: 2px solid #EFBF04;
+}
+
+.property a:hover {
+    background-color: #6C3483;  /* Royal purple */
+    color: #FFD700;
+    border-color: #FFD700;
+}
+
+/* Back Link */
+.back-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-link a {
+    color: #FFD700;
+    font-weight: 600;
+    text-decoration: none;
+    background: #1A5276;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+    border: 2px solid #FFD700;
+}
+
+.back-link a:hover {
+    background: #FFD700;
+    color: #1A5276;
+}
+
+/* Forms */
+form {
+    background-color: #22213A;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(111, 66, 193, 0.18);
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #FFD700;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #333347;
+    color: #FFD700;
+}
+
+form input[type="submit"] {
+    background-color: #FFD700;
+    color: #1A5276;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+form input[type="submit"]:hover {
+    background-color: #6C3483;
+    color: #FFD700;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 6vw;
+    }
+
+    .property, .about-section, form {
+        margin: 14px auto;
+        padding: 12px;
+    }
+
+    .property img {
+        max-width: 100%;
+        max-height: none;
+    }
+}
